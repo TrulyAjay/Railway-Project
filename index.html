@@ -12,9 +12,26 @@
         } */
         table{
             border: 2px solid;
-        }
-        .main{
             text-align: center;
+        }
+        .ctn{
+            position: relative;
+            top: 10px;
+            left: 80px;
+            border: 2px solid black;
+            border-radius: 10px;
+            width: 80px;
+            background-color: skyblue;
+            color: blue;
+            border-style: hidden;
+            text-align: center;
+        }
+        form{
+            margin: 10px;
+        }
+        .ftr{
+            position: fixed;
+            bottom: 10px;
         }
     </style>
 </head>
@@ -27,8 +44,26 @@
         </ul>
     </header> -->
     <main class="main">
-        <h2>Transit Train Info</h2>
-        <form action="post"></form>
+        <h2 style="text-align: center;">Transit Train Info</h2>
+        <form action="post">
+            <div>
+            <label for="Src">Source Station</label>
+            <input type="text" id="Src" name="Source Station" placeholder="e.g. PNBE for Patna Jncn.">
+            </div>
+            <div>
+            <label for="Dsn">Destination Station</label>
+            <input type="text" name="Destination Station" id="Dsn" placeholder="e.g. BSP for Bilaspur">
+            </div>
+            <div>
+                <label for="Date">Date of Journey</label>
+                <input type="date" id="Date" name="Date of Journey" placeholder="DD/MM/YYYY">
+            </div>
+            <div>
+                <label for="Tm">Time</label>
+                <input type="time">
+            </div>
+            <div class="ctn">Continue</div>
+        </form>
         <table>
             <caption><h2>Buffer Timing</h2></caption>
             <thead>
@@ -76,11 +111,82 @@
                     <td>12345</td>
                     <td>12345</td>
                 </tr>
+                <tr>
+                    <td>123</td>
+                    <td>12345</td>
+                    <td>12345</td>
+                    <td>12345</td>
+                    <td>12345</td>
+                </tr>
+                <tr>
+                    <td>123</td>
+                    <td>12345</td>
+                    <td>12345</td>
+                    <td>12345</td>
+                    <td>12345</td>
+                </tr>
+                <tr>
+                    <td>123</td>
+                    <td>12345</td>
+                    <td>12345</td>
+                    <td>12345</td>
+                    <td>12345</td>
+                </tr>
+                <tr>
+                    <td>123</td>
+                    <td>12345</td>
+                    <td>12345</td>
+                    <td>12345</td>
+                    <td>12345</td>
+                </tr>
+                <tr>
+                    <td>123</td>
+                    <td>12345</td>
+                    <td>12345</td>
+                    <td>12345</td>
+                    <td>12345</td>
+                </tr>
+                <tr>
+                    <td>123</td>
+                    <td>12345</td>
+                    <td>12345</td>
+                    <td>12345</td>
+                    <td>12345</td>
+                </tr>
+                <tr>
+                    <td>123</td>
+                    <td>12345</td>
+                    <td>12345</td>
+                    <td>12345</td>
+                    <td>12345</td>
+                </tr>
+                <tr>
+                    <td>123</td>
+                    <td>12345</td>
+                    <td>12345</td>
+                    <td>12345</td>
+                    <td>12345</td>
+                </tr>
+                <tr>
+                    <td>123</td>
+                    <td>12345</td>
+                    <td>12345</td>
+                    <td>12345</td>
+                    <td>12345</td>
+                </tr>
+                <tr>
+                    <td>123</td>
+                    <td>12345</td>
+                    <td>12345</td>
+                    <td>12345</td>
+                    <td>12345</td>
+                </tr>
+                
             </tbody>
         </table>
     </main>
     <footer>
-        &copy; All rights reserved - Ajay Kumar
+        <div class="ftr">&copy; All rights reserved - Ajay Kumar</div>
     </footer>
 </body>
 </html>
